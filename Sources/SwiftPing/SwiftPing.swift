@@ -8,6 +8,7 @@
 
 import Foundation
 import Darwin
+import UIKit
 
 public let sharedPingController = SwiftPing(host: "0.0.0.0", configuration: PingConfiguration(pInterval: 3, withTimeout: 4), queue: DispatchQueue.main) {
     (response: PingResponse) in
